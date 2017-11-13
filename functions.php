@@ -60,8 +60,10 @@ function getTopStories(int $maxItems = 30)
 
         echo "<li data-sid='{$story->id}'>" .
                 "<a href='{$story->url}' target='_blank' rel='noopener noreferrer'>{$story->title}</a> " .
-                "<span>({$linkDomain})</span>" .
-                "<a href='https://news.ycombinator.com/item?id={$story->id}' target='_blank' rel='noopener noreferrer'> Discussion</a>" .
+                "<span>(" .
+                    "{$linkDomain} | " .
+                    "<a href='https://news.ycombinator.com/item?id={$story->id}' target='_blank' rel='noopener noreferrer'>hn</a>" .
+                ")</span>" .
             "</li>";
     }
 }
