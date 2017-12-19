@@ -8,6 +8,7 @@
     <meta name="keywords" content="hacker news, hacker, news, quiet, quiet hacker news, tom speak, hn, hn without comments, hacker news without comments, hacker news no comments">
     <meta name="HandheldFriendly" content="true" />
     <meta name="Description" content="A quieter approach to Hacker News. Links and nothing else." />
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <style>
       html, body { background: #F0F0F0; }
@@ -69,7 +70,7 @@
     </ol>
 
     <div class="links">
-      <a href="http://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
+      <a href="https://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
     </div>
 
   </body>
