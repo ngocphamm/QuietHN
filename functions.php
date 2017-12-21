@@ -52,7 +52,7 @@ function getTopStories(int $maxItems = 30)
     // Initiate the transfers and create a promise
     $promise = $pool->promise();
 
-    // Force the pool of requests to complete.
+    // Force the pool of requests to complete. AKA wait until we have enough items.
     $promise->wait();
 
     foreach ($stories as $story) {

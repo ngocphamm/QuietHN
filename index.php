@@ -70,6 +70,7 @@
     </ol>
 
     <div class="links">
+      Proudly written in PHP.
       <a href="https://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
     </div>
 
