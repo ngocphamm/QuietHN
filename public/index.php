@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quiet Hacker News</title>
+    <title>Quiet Hacker News - 🤫🗞</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,8 +28,13 @@
         padding: 0;
       }
       li {
-        margin-bottom: 22px;
+        margin-bottom: 11px;
         color: rgba(227, 225, 221, 0.7);
+        font-size: 14px;
+      }
+      ol.comfort li {
+        margin-bottom: 22px;
+        font-size: 16px;
       }
       li a {
         color: rgb(77, 172, 253);
@@ -75,9 +80,9 @@
     </style>
   </head>
   <body>
-    <h1>Quiet Hacker News</h1>
+    <h1 onclick="toggleCompact();">Quiet Hacker News</h1>
 
-    <ol>
+    <ol id="list">
         <?php
 
             require_once 'functions.php';
@@ -92,5 +97,10 @@
       <a href="https://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
     </div>
 
+    <script>
+      function toggleCompact() {
+        document.getElementById("list").classList.toggle('comfort');
+      }
+    </script>
   </body>
 </html>
