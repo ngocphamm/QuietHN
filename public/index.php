@@ -11,10 +11,16 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 
     <style>
-      html, body { background: #F0F0F0; }
+      html, body {
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        background: rgb(24, 26, 27);
+      }
       body {
         width: 800px;
         margin: 44px auto;
+      }
+      h1, span {
+        color: rgb(227, 225, 221);
       }
       ol {
         list-style: ;
@@ -23,6 +29,17 @@
       }
       li {
         margin-bottom: 22px;
+        color: rgba(227, 225, 221, 0.7);
+      }
+      li a {
+        color: rgb(77, 172, 253);
+        text-decoration: none;
+      }
+      li a:hover {
+        text-decoration: underline;
+      }
+      li a:visited {
+        color: rgb(129, 131, 132);
       }
       .links {
         margin-top: 64px;
@@ -30,6 +47,7 @@
       }
       .links a {
         float: left;
+        color: rgb(77, 172, 253);
       }
       .links a:last-of-type {
         float: right;
@@ -70,7 +88,7 @@
     </ol>
 
     <div class="links">
-      Proudly written in PHP.
+      <span>Proudly written in PHP.</span>
       <a href="https://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
     </div>
 
