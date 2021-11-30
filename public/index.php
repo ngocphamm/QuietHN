@@ -47,7 +47,7 @@
         color: rgb(129, 131, 132);
       }
       .links {
-        margin-top: 64px;
+        margin-top: 50px;
         padding-bottom: 4px;
       }
       .links a {
