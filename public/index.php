@@ -99,7 +99,7 @@
 
     <script>
       function toggleCompact() {
-        document.getElementById("list").classList.toggle('comfort');
+        document.getElementById('list').classList.toggle('comfort');
       }
     </script>
   </body>
