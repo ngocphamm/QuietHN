@@ -67,8 +67,8 @@
           font-size: 40px;
         }
         li {
-          margin-bottom: 50px;
-          font-size: 20px;
+          margin-bottom: 16px;
+          font-size: 16px;
         }
         li span {
           display: block;
@@ -77,10 +77,18 @@
           font-size: 18px;
         }
       }
+
+      @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px) {
+        h1 {
+          font-size: 32px;
+        }
+      }
     </style>
   </head>
   <body>
-    <h1 onclick="toggleCompact();">Quiet Hacker News</h1>
+    <h1>Quiet Hacker News</h1>
 
     <ol id="list">
         <?php
@@ -96,11 +104,5 @@
       <span>Proudly written in PHP.</span>
       <a href="https://github.com/tomspeak/quiet-hacker-news">Inspired By</a>
     </div>
-
-    <script>
-      function toggleCompact() {
-        document.getElementById('list').classList.toggle('comfort');
-      }
-    </script>
   </body>
 </html>
