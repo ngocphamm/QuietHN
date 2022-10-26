@@ -23,7 +23,6 @@
         color: rgb(227, 225, 221);
       }
       ol {
-        list-style: ;
         margin: 0 0 0 18px;
         padding: 0;
       }
