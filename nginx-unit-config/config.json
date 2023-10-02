@@ -1,9 +1,24 @@
 {
     "listeners": {
         "*:80": {
-            "pass": "applications/php"
+            "pass": "routes"
         }
     },
+
+    "routes": [
+        {
+            "match": {
+                "uri": "!/index.php"
+            },
+            "action": {
+                "share": "/www/public$uri",
+                "fallback": {
+                    "pass": "applications/php"
+                }
+            }
+        }
+    ],
+
     "applications": {
         "php": {
             "type": "php",
