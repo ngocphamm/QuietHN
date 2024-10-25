@@ -59,7 +59,7 @@ function getTopStories(int $maxItems = 30)
         $linkDomain = parse_url($story->url)['host'];
 
         echo "<li data-sid='{$story->id}'>" .
-                "<a href='{$story->url}' target='_blank' rel='noopener noreferrer'>{$story->title}</a> " .
+                "<a href='{$story->url}' target='_blank' rel='noopener noreferrer'>" . htmlspecialchars($story->title) . "</a> " .
                 "<span>(" .
                     "{$linkDomain} | " .
                     "<a href='https://news.ycombinator.com/item?id={$story->id}' target='_blank' rel='noopener noreferrer'>hn</a>" .
