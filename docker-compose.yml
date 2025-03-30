@@ -7,3 +7,8 @@ services:
         - ./nginx-unit-config:/docker-entrypoint.d
         - ./src:/www
       restart: unless-stopped
+
+networks:
+  default:
+    driver: bridge
+    name: pangolin
