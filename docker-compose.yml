@@ -1,0 +1,9 @@
+services:
+  quiethn:
+      image: unit:php8.4
+      container_name: quiethn
+      volumes:
+        - /etc/localtime:/etc/localtime:ro # Use timezone from host
+        - ./nginx-unit-config:/docker-entrypoint.d
+        - ./src:/www
+      restart: unless-stopped
